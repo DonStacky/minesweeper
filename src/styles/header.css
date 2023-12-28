@@ -1,0 +1,77 @@
+@import url(./fonts.css);
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vw;
+  max-height: 16vh;
+  background-color: #a9a1a1;
+  border: 2px ridge #000;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 25%;
+  background-color: #857f7f;
+  border: 2px outset #000;
+  font-family: digi, sans-serif;
+  box-shadow: 2px 2px 5px rgb(83, 77, 77);
+  font-size: 2.5rem;
+}
+
+.header__face {
+  height: 90%;
+  width: 25%;
+  max-width: 15vh;
+  background: url('../assets/img/free-icon-smile-5786800.png'), #5C9595;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(83, 77, 77);
+  transition: 0.3s;
+}
+
+.header__face:hover {
+  box-shadow: 5px 5px 5px rgb(83, 77, 77);
+}
+
+.header__face:active {
+  background: url('../assets/img/free-icon-happy-983028.png'), #5C9595;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 0px rgb(83, 77, 77);
+}
+
+.header__face--win {
+  background: url('../assets/img/free-icon-cool-2341848.png'), #5C9595;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__face--lose {
+  background: url('../assets/img/free-icon-dead-2341909.png'), #5C9595;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__mines, .header__time {
+  pointer-events: none;
+}
+
+.dark .header {
+  background-color: rgb(35, 35, 54);
+}
+
+.dark .header__item {
+  background-color: rgb(58, 58, 73);
+  color: #8edbdb;
+}

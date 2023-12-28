@@ -1,0 +1,7 @@
+@font-face {
+    font-family: digi;
+    src: local('digi'),
+         url('../assets/fonts/DS-DIGI.TTF');
+    font-style: normal;
+    font-weight: normal;
+}
